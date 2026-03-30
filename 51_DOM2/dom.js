@@ -81,3 +81,15 @@ for(let i = 0; i < orders.length; i++){
     item.innerHTML = orders[i];
     display.append(item);
 }
+
+///////////////////////////////////////////////////////////////////////////
+// remove method 
+
+// let e4 = document.querySelector("h2");
+// e4.remove()
+
+let footerContent = document.querySelector("footer h3");
+// let e5 = document.querySelector("h3");
+
+// footerContent.removeChild(e5);
+footerContent.remove()
