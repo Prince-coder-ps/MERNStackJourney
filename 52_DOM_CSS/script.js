@@ -17,14 +17,26 @@ console.log(e1.style);
 
 // ======================================================================
 
-// let images = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtoMursUYpyP802G5K9qZsjsM0fefWl5SiJRyt1Fb8vTJG7RpkqdL3&usqp=CAE&s", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtoMursUYpyP802G5K9qZsjsM0fefWl5SiJRyt1Fb8vTJG7RpkqdL3&usqp=CAE&s", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtoMursUYpyP802G5K9qZsjsM0fefWl5SiJRyt1Fb8vTJG7RpkqdL3&usqp=CAE&s"];
+// let images = ["https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dmlyYXQlMjBrb2hsaXxlbnwwfHwwfHx8MA%3D%3D","https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dmlyYXQlMjBrb2hsaXxlbnwwfHwwfHx8MA%3D%3D", "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dmlyYXQlMjBrb2hsaXxlbnwwfHwwfHx8MA%3D%3D"]
 
 // let pannel = document.querySelector("#rangers");
 
-// for(let i =0; images.length; i++){
+// for (let i = 0; i < images.length; i++) {
 //     let image = document.createElement("img");
-//     image.setAttribute("src", images[i])
+//     image.setAttribute("src", images[i]);
+//     image.style.cssText = "height : 230px; width : 200px;"
 //     pannel.append(image);
 // }
+
+
+//====Form======
+//  => user -> Stident(email required) / teacher(not need of email)
+
+let role = prompt("enter your role ");
+
+if(role == "student"){
+    let mail = document.querySelector("#email");
+    mail.setAttribute("required", "true");
+}
 
 
