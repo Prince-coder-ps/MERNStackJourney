@@ -15,7 +15,7 @@ console.log("Hello  mittron ....");
 // ====== ClassList =======
 // provide some method like remove, add ect.
 
-let box = document.getElementById("dabba");
+// let box = document.getElementById("dabba");
 
 // let mode = prompt("Enter mode ");
 
@@ -29,4 +29,11 @@ let box = document.getElementById("dabba");
 
 // console.log(box.classList);
 
+let box = document.getElementById("dabba");
 box.classList.add("lightMode","filter", "underline")
+
+console.log(box.classList.contains("font")); // rteurn false
+
+box.classList.add("font");
+console.log(box.classList.contains("font")); // rteurn true
+
