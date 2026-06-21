@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling and Delegation</title>
+
+    <style>
+        #parent{
+            padding: 30px;
+            background-color: lightblue;
+        }
+        #child{
+            padding: 20px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Bubbling and Delegation</h1>
+
+    <!-- <div id="parent">Parent
+        <button id="child">Click me</button>
+    </div> -->
+
+    <!-- <ul id="list">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Date</li>
+    </ul> -->
+
+    <!-- Delegation     -->
+    <button id="addBtn">Add Fruits</button>
+       <ul id="list">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+        <li>Date</li>
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
